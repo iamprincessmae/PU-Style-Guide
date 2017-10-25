@@ -188,9 +188,7 @@ b {font-weight: $bold; }
 .italic{ font-style: $italic; }
 
 /*Font color and background color*/    
-.t-white, { color: $white; }
-
-.t-red, { color: $red_1; }
+.t-white { color: $white; }
 
 .t-black-1 { color: $black_1; }
 
@@ -229,11 +227,72 @@ b {font-weight: $bold; }
 
 .bg-black-1 { background-color: $black_1; }
 
-.bg-black-2 { background-color: $black_2; }
+.bg-black-2 { background-color: $black_3; }
+
+.bg-black-3 { background-color: $black_2; }
 
 .bg-blue-1 { background-color: $blue_1; }
 
+.bg-blue-2 { background-color: $blue_2; }
+
+.bg-blue-3 { background-color: $blue_3; }
+
+.bg-green-1 { background-color: $green_1; }
+
+.bg-green-2 { background-color: $green_2; }
+
+.bg-red-1 { background-color: $red_1; }
+
+.bg-red-2 { background-color: $red_2; }
+
+.bg-yellow-1 { background-color: $yellow_1; }
+
+.bg-yellow-2 { background-color: $yellow_2; }
+
+.bg-purple-1 { background-color: $purple_1; }
+
 .bg-gray-1  { background-color: $gray_1; }
+
+.bg-gray-2  { background-color: $gray_2; }
+
+.bg-gray-3  { background-color: $gray_3; }
+
+.bg-gray-4  { background-color: $gray_4; }
+
+/*border-color*/
+.br-white { border-color: $white !important; }
+
+.br-black-1 { border-color: $black_1 !important; }
+
+.br-black-2 { border-color: $black_2 !important; }
+
+.br-black-3 { border-color: $black_3 !important; }
+
+.br-blue-1 { border-color: $blue_1 !important; }
+
+.br-blue-2 { border-color: $blue_2 !important; }
+
+.br-green-1 { border-color: $green_1 !important; }
+
+.br-green-2 { border-color: $green_2 !important; }
+
+.br-red-1 { border-color: $red_1 !important; }
+
+.br-red-2 { border-color: $red_2 !important; }
+
+.br-yellow-1 { border-color: $yellow_1 !important; }
+
+.br-yellow-2 { border-color: $yellow_2 !important; }
+
+.br-purple-1 { border-color: $purple_1 !important; }
+
+.br-gray-1 { border-color: $gray_1 !important; }
+
+.br-gray-2 { border-color: $gray_2 !important; }
+
+.br-gray-3 { border-color: $gray_3 !important; }
+
+.br-gray-4 { border-color: $gray_4 !important; }
 
 .text-uppercase { text-transform: uppercase; }
 .text-capitalize,.text-capitalize > span { text-transform: capitalize; }
@@ -270,15 +329,15 @@ b {font-weight: $bold; }
 
 .no-border-right  { border-right: 0 none; }
 
-.border-all       { border: 1px solid $gray_3; }
+.border-all       { border: 1px solid; }
 
-.border-top       { border-top: 1px solid $gray_3; }
+.border-top       { border-top: 1px solid; }
 
-.border-bottom    { border-bottom: 1px solid $gray_3; }
+.border-bottom    { border-bottom: 1px solid; }
 
-.border-right     { border-right: 1px solid $gray_3; }
+.border-right     { border-right: 1px solid; }
 
-.border-left      { border-left: 1px solid $gray_3; }
+.border-left      { border-left: 1px solid; }
 
 /*Border Styles*/
 .border-dotted { border-style: dotted; }
@@ -323,7 +382,6 @@ b {font-weight: $bold; }
     border: 1px solid transparent;
     cursor: pointer;
     display: inline-block;
-    font-size: 13px;
     letter-spacing: 0.2em;
     outline: none;
     position: $relative;
@@ -337,15 +395,43 @@ b {font-weight: $bold; }
     &.disabled,
     &[disabled]{ cursor: not-allowed; }
 
-    &.style1 {
+    &.style1,
+    &.style2,
+    &.style3,
+    &.style4,
+    &.style5 {
         border-radius: 2px;
-        padding: 15px 18px;
+        &.bg-blue-1 {
+            &:hover { background-color: $blue_3; }
+        }
+        &.bg-red-1 {
+            &:hover { background-color: $red_2; }
+        }
     }
 
-    &.style1 {
-        background-color: $blue_1;
-        color: $white;
-        &:hover { background-color: $blue_2; }
+    &.style1 { 
+        font-size: $f_11;
+        padding: 8px 10px; 
+    }
+
+    &.style2 {
+       font-size:  $f_12;
+       padding: 12px;
+    }
+
+    &.style3 {
+       font-size:  $f_14;
+       padding: 12px;
+    }
+
+    &.style4 {
+       font-size:  $f_16;
+       padding: 18px 22px;
+    }
+
+    &.style5 {
+       font-size:  $f_18;
+       padding: 21px 26px;
     }
 }
 
@@ -396,3 +482,27 @@ input[type="number"]:focus,
 :focus {outline:none;}
 ::-moz-focus-inner {border:0;}
 input:invalid { box-shadow: none; }
+
+
+/*tabs*/
+.tabbable {
+    .nav-tabs {
+        li {
+            display: inline-block;
+            padding: 17px 10px;
+            background: #ccc;
+            margin-right: 1px;
+            a {
+                color: $white;
+                background: $gray_3;
+                font-size: $f_14;
+            }
+        }
+    }
+}
+.tab-pane {
+    display: none;
+    &.active { display: block; }
+}
+
+

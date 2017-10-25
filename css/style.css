@@ -207,9 +207,6 @@ b {
 .t-white {
   color: #FFF; }
 
-.t-red {
-  color: #D45245; }
-
 .t-black-1 {
   color: #000000; }
 
@@ -266,13 +263,104 @@ b {
   background-color: #000000; }
 
 .bg-black-2 {
+  background-color: #303030; }
+
+.bg-black-3 {
   background-color: #202020; }
 
 .bg-blue-1 {
   background-color: #2967DE; }
 
+.bg-blue-2 {
+  background-color: #ECF3FF; }
+
+.bg-blue-3 {
+  background-color: #2258C2; }
+
+.bg-green-1 {
+  background-color: #54BA60; }
+
+.bg-green-2 {
+  background-color: #EBFFED; }
+
+.bg-red-1 {
+  background-color: #D45245; }
+
+.bg-red-2 {
+  background-color: #FFE4E5; }
+
+.bg-yellow-1 {
+  background-color: #F0B92F; }
+
+.bg-yellow-2 {
+  background-color: #FFFEE9; }
+
+.bg-purple-1 {
+  background-color: #9542D5; }
+
 .bg-gray-1 {
   background-color: #808080; }
+
+.bg-gray-2 {
+  background-color: #AAA; }
+
+.bg-gray-3 {
+  background-color: #CCCCCC; }
+
+.bg-gray-4 {
+  background-color: #F5F5F5; }
+
+/*border-color*/
+.br-white {
+  border-color: #FFF !important; }
+
+.br-black-1 {
+  border-color: #000000 !important; }
+
+.br-black-2 {
+  border-color: #202020 !important; }
+
+.br-black-3 {
+  border-color: #303030 !important; }
+
+.br-blue-1 {
+  border-color: #2967DE !important; }
+
+.br-blue-2 {
+  border-color: #ECF3FF !important; }
+
+.br-green-1 {
+  border-color: #54BA60 !important; }
+
+.br-green-2 {
+  border-color: #EBFFED !important; }
+
+.br-red-1 {
+  border-color: #D45245 !important; }
+
+.br-red-2 {
+  border-color: #FFE4E5 !important; }
+
+.br-yellow-1 {
+  border-color: #F0B92F !important; }
+
+.br-yellow-2 {
+  border-color: #FFFEE9 !important; }
+
+.br-purple-1 {
+  border-color: #9542D5 !important; }
+
+.br-gray-1 {
+  border-color: #808080 !important; }
+
+.br-gray-2 {
+  border-color: #AAA !important; }
+
+.br-gray-3 {
+  border-color: #CCCCCC !important; }
+
+.br-gray-4 {
+  border-color: #F5F5F5 !important; }
 
 .text-uppercase {
   text-transform: uppercase; }
@@ -321,19 +409,19 @@ b {
   border-right: 0 none; }
 
 .border-all {
-  border: 1px solid #CCCCCC; }
+  border: 1px solid; }
 
 .border-top {
-  border-top: 1px solid #CCCCCC; }
+  border-top: 1px solid; }
 
 .border-bottom {
-  border-bottom: 1px solid #CCCCCC; }
+  border-bottom: 1px solid; }
 
 .border-right {
-  border-right: 1px solid #CCCCCC; }
+  border-right: 1px solid; }
 
 .border-left {
-  border-left: 1px solid #CCCCCC; }
+  border-left: 1px solid; }
 
 /*Border Styles*/
 .border-dotted {
@@ -410,7 +498,6 @@ b {
   border: 1px solid transparent;
   cursor: pointer;
   display: inline-block;
-  font-size: 13px;
   letter-spacing: 0.2em;
   outline: none;
   position: relative;
@@ -421,14 +508,27 @@ b {
   font-family: "Work Sans", sans-serif; }
   .btn.disabled, .btn[disabled] {
     cursor: not-allowed; }
+  .btn.style1, .btn.style2, .btn.style3, .btn.style4, .btn.style5 {
+    border-radius: 2px; }
+    .btn.style1.bg-blue-1:hover, .btn.style2.bg-blue-1:hover, .btn.style3.bg-blue-1:hover, .btn.style4.bg-blue-1:hover, .btn.style5.bg-blue-1:hover {
+      background-color: #2258C2; }
+    .btn.style1.bg-red-1:hover, .btn.style2.bg-red-1:hover, .btn.style3.bg-red-1:hover, .btn.style4.bg-red-1:hover, .btn.style5.bg-red-1:hover {
+      background-color: #FFE4E5; }
   .btn.style1 {
-    border-radius: 2px;
-    padding: 15px 18px; }
-  .btn.style1 {
-    background-color: #2967DE;
-    color: #FFF; }
-    .btn.style1:hover {
-      background-color: #ECF3FF; }
+    font-size: 11px;
+    padding: 8px 10px; }
+  .btn.style2 {
+    font-size: 12px;
+    padding: 12px; }
+  .btn.style3 {
+    font-size: 14px;
+    padding: 12px; }
+  .btn.style4 {
+    font-size: 16px;
+    padding: 18px 22px; }
+  .btn.style5 {
+    font-size: 18px;
+    padding: 21px 26px; }
 
 /*Input*/
 textarea:hover,
@@ -466,6 +566,22 @@ input[type="number"]:focus,
 
 input:invalid {
   box-shadow: none; }
+
+/*tabs*/
+.tabbable .nav-tabs li {
+  display: inline-block;
+  padding: 17px 10px;
+  background: #ccc;
+  margin-right: 1px; }
+  .tabbable .nav-tabs li a {
+    color: #FFF;
+    background: #CCCCCC;
+    font-size: 14px; }
+
+.tab-pane {
+  display: none; }
+  .tab-pane.active {
+    display: block; }
 
 /*Utilities*/
 /*----------------------------------------------------------------------------*/
