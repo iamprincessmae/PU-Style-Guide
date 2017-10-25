@@ -1,0 +1,398 @@
+/*CSS RESET*/
+/*---------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------*/
+
+html {
+    min-height: 100%;
+    font-size: 62.5%;
+    width: 100%;   
+}
+
+body {
+    font-family: $font_work_sans, $font_sans_serif;
+}
+
+
+/*Typography*/
+/*----------------------------------------------------------------------------*/
+
+/*Headings*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font_work_sans, $font_sans_serif;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 48px; 
+    font-weight: 300;
+    letter-spacing: 0.03em;    
+}
+
+h2 {
+    font-size: 34px; 
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 25px; 
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 20px; 
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .3em;
+}
+
+h6 {
+    font-size: 14px; 
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+/*font sizes*/
+
+
+.f20 {
+    font-size: $f_20; 
+    line-height: 1.75;
+}
+
+.f19 { 
+    font-size: $f_19; 
+    line-height: 166%;
+}
+
+.f18 { 
+    font-size: $f_18; 
+    line-height: 166%;
+}
+
+.f17 { 
+    font-size: $f_17; 
+    line-height: 166%;
+}
+
+.f16 { 
+    font-size: $f_16; 
+    line-height: 150%;
+}
+
+.f15 {
+    font-size: $f_15;
+    line-height: 187%;
+}
+
+.f14 { 
+    font-size: $f_14; 
+    line-height: 171%; 
+}
+
+.f13 { 
+    font-size: $f_13; 
+    line-height: 107%; 
+}
+
+.f12 {
+    font-size: $f_12; 
+    line-height: 1.5;
+}
+
+.f11 { font-size: $f_11; }
+
+.f10 { font-size: $f_10; }
+
+p { 
+    font-family: "Work sans",sans-serif;
+    font-size: 16px; 
+    font-weight: 300; 
+    word-wrap: break-word;
+}
+
+a { text-decoration: none; font-size: inherit; color: inherit; }
+
+/*Font weight*/
+
+.bold,
+bold,
+b {font-weight: $bold; }
+
+.semi-bold { font-weight: $semi-bold; }
+
+.medium { font-weight: $medium; }
+
+.regular{ font-weight: $regular; }
+
+.light-text{ font-weight: $light-text; }
+
+.italic{ font-style: $italic; }
+
+/*Font color and background color*/    
+.t-white, { color: $white; }
+
+.t-red, { color: $red_1; }
+
+.t-black-1 { color: $black_1; }
+
+.t-black-2 { color: $black_2; }
+
+.t-black-3 { color: $black_3; }
+
+.t-blue-1 { color: $blue_1; }
+
+.t-blue-2 { color: $blue_2; }
+
+.t-green-1 { color: $green_1; }
+
+.t-green-2 { color: $green_2; }
+
+.t-red-1 { color: $red_1; }
+
+.t-red-2 { color: $red_2; }
+
+.t-yellow-1 { color: $yellow_1; }
+
+.t-yellow-2 { color: $yellow_2; }
+
+.t-purple-1 { color: $purple_1; }
+
+.t-gray-1 { color: $gray_1; }
+
+.t-gray-2 { color: $gray_2; }
+
+.t-gray-3 { color: $gray_3; }
+
+.t-gray-4 { color: $gray_4; }
+
+/*Background color*/
+.bg-white   { background-color: $white; }
+
+.bg-black-1 { background-color: $black_1; }
+
+.bg-black-2 { background-color: $black_2; }
+
+.bg-blue-1 { background-color: $blue_1; }
+
+.bg-gray-1  { background-color: $gray_1; }
+
+.text-uppercase { text-transform: uppercase; }
+.text-capitalize,.text-capitalize > span { text-transform: capitalize; }
+
+.pull-right { float: right !important; }
+.pull-left { float: left !important; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; } 
+
+/* Fill */
+
+.fill-blue-1 {
+    fill: $blue_1;
+}
+
+.fill-white{
+    fill: $white;
+}
+
+
+/*Utilities*/
+/*----------------------------------------------------------------------------*/
+
+/*Border*/
+.no-border        { border: 0 none; }
+
+.no-border-top    { border-top: 0 none; }
+
+.no-border-bottom { border-bottom: 0 none; }
+
+.no-border-left   { border-left: 0 none; }
+
+.no-border-right  { border-right: 0 none; }
+
+.border-all       { border: 1px solid $gray_3; }
+
+.border-top       { border-top: 1px solid $gray_3; }
+
+.border-bottom    { border-bottom: 1px solid $gray_3; }
+
+.border-right     { border-right: 1px solid $gray_3; }
+
+.border-left      { border-left: 1px solid $gray_3; }
+
+/*Border Styles*/
+.border-dotted { border-style: dotted; }
+.border-solid  { border-style: solid; }
+.border-dashed { border-style: dashed; }
+.border-hidden { border-style: hidden; }
+.border-double { border-style: double; }
+
+/*Clickable Cursor*/
+.clickable { 
+    cursor: pointer;
+    outline: none;
+    @include userSelect(none);
+}
+
+.not-allowed { cursor: not-allowed !important; }
+
+.auto-cursor { cursor: auto !important; }
+
+/*Icons*/
+.icon { display: inline-block; cursor: pointer; outline: none; }
+
+.xxs-icon { font-size: 10px; }
+.xs-icon { font-size: 12px; }
+.sm-icon { font-size: 16px; }
+.md-icon { font-size: 20px; }
+.lg-icon { font-size: 30px; }
+.xl-icon { font-size: 50px; }
+.xxl-icon { font-size: 90px; }
+
+.icon.disabled:hover,
+.icon.disabled { 
+    color: #f5f6f9;
+    cursor: not-allowed;
+}
+
+.visible-md { display: none; }
+
+/*buttons*/
+
+.btn {
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    outline: none;
+    position: $relative;
+    text-decoration: none;
+    vertical-align: middle;
+    font-weight: 400;
+    text-align: center;
+    font-family: $font_work_sans, $font_sans_serif;
+    @extend %extend_transition-linear;
+
+    &.disabled,
+    &[disabled]{ cursor: not-allowed; }
+
+    &.style1 {
+        border-radius: 2px;
+        padding: 15px 18px;
+    }
+
+    &.style1 {
+        background-color: $blue_1;
+        color: $white;
+        &:hover { background-color: $blue_2; }
+    }
+}
+
+/*Input*/
+input[type="text"], 
+input[type="password"],
+input[type="email"], 
+input[type="date"], 
+input[type="number"], 
+select, 
+textarea, 
+.ui-select-menu {
+    @extend %input-default;
+}
+
+textarea:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+input[type="date"]:hover,
+input[type="number"]:hover,
+.ui-selectmenu-button.ui-state-hover,
+.ui-select-menu:hover,
+textarea:active,
+input[type="text"]:active,
+input[type="password"]:active,
+input[type="email"]:active,
+input[type="date"]:active,
+input[type="number"]:active,
+.ui-selectmenu-button.ui-state-active,
+.ui-select-menu:active,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+.ui-selectmenu-button.ui-state-focus,
+.ui-select-menu:focus {
+    border-color: $blue_1;
+}
+
+
+/*link*/
+
+
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+input:invalid { box-shadow: none; }

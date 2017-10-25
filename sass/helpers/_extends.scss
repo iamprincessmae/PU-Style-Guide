@@ -1,0 +1,30 @@
+%extend_transition-linear {
+	@include browserPrefix( transition, all .1s linear );
+}
+
+%extend_transition-ease-in-out {
+	@include browserPrefix( transition, all .3s ease-in-out );
+}
+
+%extend_transition-ease {
+	@include browserPrefix( transition, all .1s ease );
+}
+
+%input-default {
+    background: $white;
+    border: 0 none;
+    border-bottom: 1px solid $gray_3;
+    display: block;
+    font-size: 16px;
+    font-family: $font_work_sans,$font_sans_serif;
+    font-weight: $light-text;
+    height: 50px;
+    outline: 0;
+    width: 100%;
+}
+
+%extend_center {
+	left: 50%;
+	transform: translateX(-50%);
+	position: relative;
+}
