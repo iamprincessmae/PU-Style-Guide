@@ -569,14 +569,26 @@ input:invalid {
 
 /*tabs*/
 .tabbable .nav-tabs li {
-  display: inline-block;
-  padding: 17px 10px;
-  background: #ccc;
-  margin-right: 1px; }
+  display: inline-block; }
+  .tabbable .nav-tabs li.active a {
+    background: #2967DE; }
   .tabbable .nav-tabs li a {
     color: #FFF;
+    font-size: 14px;
+    padding: 17px 10px;
     background: #CCCCCC;
-    font-size: 14px; }
+    margin-right: 1px;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px; }
+.tabbable .tab-content {
+  margin-top: 18px;
+  background: #fff;
+  border: 1px solid #CCCCCC;
+  padding: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px; }
 
 .tab-pane {
   display: none; }
